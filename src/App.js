@@ -3,6 +3,7 @@ import TaskList from './Pages/TaskList';
 import TaskForm from './Pages/TaskForm';
 import './App.css';
 
+
 const App = () => {
   const [tasks, setTasks] = useState([]);
   const [counter, setCounter] = useState(0)
@@ -15,6 +16,7 @@ const App = () => {
     setCounter(1);
   }, []);
 
+  
   // Save tasks to localStorage whenever tasks change
   useEffect(() => {
     if (counter === 0) {
